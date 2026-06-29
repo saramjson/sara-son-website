@@ -17,7 +17,7 @@ body {
 
 /* window */
 .window {
-  width: 480px;
+  width: 560px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow:
@@ -25,6 +25,11 @@ body {
     0 8px 24px rgba(0,0,0,0.14),
     0 2px 6px rgba(0,0,0,0.08);
   border: 1px solid rgba(0,0,0,0.1);
+}
+
+.window-body.inner-page {
+  max-height: 360px;
+  overflow-y: auto;
 }
 
 /* title bar */
@@ -137,6 +142,14 @@ body {
   padding: 32px 32px 40px;
   display: flex;
   justify-content: center;
+  height: 360px;
+  overflow-y: auto;
+}
+
+.window-body.inner-page {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .object-grid {
@@ -225,4 +238,102 @@ body {
   font-size: 13px;
   color: #999;
   margin-right: 6px;
+}
+
+
+/* about layout */
+.about-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.about-photo {
+  width: 180px;
+}
+
+.about-photo img {
+  width: 100%;
+  display: block;
+}
+
+.about-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.about-bio p {
+  font-size: 12.5px;
+  line-height: 1.75;
+  color: #222;
+}
+
+/* about photo */
+.about-photo {
+  width: 160px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.about-photo img {
+  width: 100%;
+  display: block;
+}
+
+/* bio tree */
+.bio-tree {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tree-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tree-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.tree-arrow {
+  font-size: 9px;
+  color: #888;
+  width: 12px;
+  transition: transform 0.15s ease;
+}
+
+.tree-arrow.open {
+  transform: rotate(90deg);
+}
+
+.tree-label {
+  font-size: 12px;
+  color: #111;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.tree-content {
+  padding-left: 18px;
+  font-size: 12px;
+  color: #444;
+  line-height: 1.7;
+  border-left: 1px solid #e0e0e0;
+  margin-left: 5px;
+  padding-top: 4px;
+  padding-bottom: 2px;
+}
+
+.bio-intro {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #444;
 }
