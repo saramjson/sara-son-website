@@ -79,11 +79,44 @@ body {
 
 .nav-arrows {
   display: flex;
-  gap: 5px;
-  color: #666;
-  font-size: 18px;
-  line-height: 1;
+  gap: 0px;
+}
+
+.nav-arrows a,
+.nav-arrows span {
+  width: 26px;
+  height: 22px;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: #444;
+  background: linear-gradient(180deg, #e2e2e2 0%, #c8c8c8 100%);
+  border: 1px solid #aaa;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.nav-arrows a:first-child,
+.nav-arrows span:first-child {
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+}
+
+.nav-arrows a:last-child,
+.nav-arrows span:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.nav-arrows a:hover {
+  background: linear-gradient(180deg, #d0d0d0 0%, #b8b8b8 100%);
+  color: #111;
+}
+
+.nav-arrows span.dim {
+  color: #bbb;
+  cursor: default;
 }
 
 .address-field {
@@ -145,5 +178,51 @@ body {
 .object-item span {
   font-size: 11px;
   letter-spacing: 0.1em;
-  font-family: Georgia, serif;
+  font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* inner pages */
+.inner-page {
+  padding: 40px 48px 52px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.inner-page h1 {
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  color: #999;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-links a {
+  font-size: 13px;
+  font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  color: #111;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+/* make back arrow clickable */
+.nav-arrows a {
+  color: #666;
+  text-decoration: none;
+}
+
+.contact-label {
+  font-size: 13px;
+  color: #999;
+  margin-right: 6px;
 }
