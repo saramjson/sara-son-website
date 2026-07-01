@@ -388,7 +388,6 @@ body {
   .window {
     width: calc(100vw - 32px);
     min-width: calc(100vw - 32px);
-    box-shadow: none;
   }
 
   .window-body {
