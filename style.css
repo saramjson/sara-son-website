@@ -17,6 +17,7 @@ body {
   align-items: center;
   justify-content: center;
   font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  cursor: url('images/cursor-sparkle.png') 16 16, auto;
 }
 
 /* window */
