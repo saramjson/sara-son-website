@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /butter.html
+Allow: /
+
+Sitemap: https://sara-son.com/sitemap.xml
